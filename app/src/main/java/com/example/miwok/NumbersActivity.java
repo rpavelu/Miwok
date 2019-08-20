@@ -10,22 +10,22 @@ public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numbers);
+        setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("one", "lutti"));
-        words.add(new Word("two", "otiiko"));
-        words.add(new Word("three", "tolookosu"));
-        words.add(new Word("four", "oyyisa"));
-        words.add(new Word("five", "massokka"));
-        words.add(new Word("six", "temmokka"));
-        words.add(new Word("seven", "kenekaku"));
-        words.add(new Word("eight", "kawinta"));
-        words.add(new Word("nine", "wo'e"));
-        words.add(new Word("ten", "na'aacha"));
+        words.add(new Word("Один", "Uno"));
+        words.add(new Word("Два", "Dos"));
+        words.add(new Word("Три", "Tres"));
+        words.add(new Word("Четыре", "Cuatro"));
+        words.add(new Word("Пять", "Cinco"));
+        words.add(new Word("Шесть", "Seis"));
+        words.add(new Word("Семь", "Siete"));
+        words.add(new Word("Восемь", "Ocho"));
+        words.add(new Word("Девять", "Nueve"));
+        words.add(new Word("Десять", "Diez"));
 
         WordAdapter adapter = new WordAdapter(this, words);
-        ListView listView = findViewById(R.id.list);
+        ListView listView = findViewById(R.id.wordList);
         listView.setAdapter(adapter);
 
         //Если бы мы хотели делать LinearLayout

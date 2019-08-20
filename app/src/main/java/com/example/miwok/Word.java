@@ -14,7 +14,7 @@ public class Word {
         return mDefaultTranslation;
     }
 
-    public String getmMiwokTranslation() {
+    public String getmSpanishTranslation() {
         return mMiwokTranslation;
     }
 }
