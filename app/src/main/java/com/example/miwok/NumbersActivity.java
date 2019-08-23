@@ -13,16 +13,16 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("Один", "Uno"));
-        words.add(new Word("Два", "Dos"));
-        words.add(new Word("Три", "Tres"));
-        words.add(new Word("Четыре", "Cuatro"));
-        words.add(new Word("Пять", "Cinco"));
-        words.add(new Word("Шесть", "Seis"));
-        words.add(new Word("Семь", "Siete"));
-        words.add(new Word("Восемь", "Ocho"));
-        words.add(new Word("Девять", "Nueve"));
-        words.add(new Word("Десять", "Diez"));
+        words.add(new Word("Один", "Uno", R.drawable.number_one));
+        words.add(new Word("Два", "Dos", R.drawable.number_two));
+        words.add(new Word("Три", "Tres", R.drawable.number_three));
+        words.add(new Word("Четыре", "Cuatro", R.drawable.number_four));
+        words.add(new Word("Пять", "Cinco", R.drawable.number_five));
+        words.add(new Word("Шесть", "Seis", R.drawable.number_six));
+        words.add(new Word("Семь", "Siete", R.drawable.number_seven));
+        words.add(new Word("Восемь", "Ocho", R.drawable.number_eight));
+        words.add(new Word("Девять", "Nueve", R.drawable.number_nine));
+        words.add(new Word("Десять", "Diez", R.drawable.number_ten));
 
         WordAdapter adapter = new WordAdapter(this, words);
         ListView listView = findViewById(R.id.wordList);
